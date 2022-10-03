@@ -82,14 +82,5 @@ class MainActivityKotlin : AppCompatActivity() {
     }
 
 
-//    override fun onResume() {
-//        super.onResume();
-//        registerBroadcastReceiver();
-//    }
-
-//    override fun onDestroy() {
-//        super.onDestroy();
-//        unregisterReceiver(smsBroadcastReceiver);
-//    }
 
 }

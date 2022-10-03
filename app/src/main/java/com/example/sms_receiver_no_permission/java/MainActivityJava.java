@@ -24,9 +24,7 @@ public class MainActivityJava extends AppCompatActivity {
     SmsBroadcastReceiver smsBroadcastReceiver;
     AppCompatEditText edtOtp;
 
-
     //    https://www.youtube.com/watch?v=bUqQ1pRmQnI
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,15 +96,4 @@ public class MainActivityJava extends AppCompatActivity {
         unregisterReceiver(smsBroadcastReceiver);
     }
 
-    //    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        registerBroadcastReceiver();
-//    }
-
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//        unregisterReceiver(smsBroadcastReceiver);
-//    }
 }
