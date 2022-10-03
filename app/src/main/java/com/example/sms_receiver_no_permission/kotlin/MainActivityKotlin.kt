@@ -63,7 +63,7 @@ class MainActivityKotlin : AppCompatActivity() {
     }
 
     private fun getOtpFromMessage(message: String) {
-        val otpPattern = Pattern.compile("(|^)\\d{6}") // 6 is the length of sms
+        val otpPattern = Pattern.compile("(|^)\\d{6}") // 6 is the length of sms  and d means just accept digit
         val matcher = otpPattern.matcher(message)
         if (matcher.find()) {
             binding.edtOtp.setText(matcher.group(0))

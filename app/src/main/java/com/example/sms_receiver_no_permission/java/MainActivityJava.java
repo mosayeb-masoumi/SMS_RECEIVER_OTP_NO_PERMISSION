@@ -76,7 +76,7 @@ public class MainActivityJava extends AppCompatActivity {
 
     private void getOtpFromMessage(String message) {
 
-        Pattern otpPattern = Pattern.compile("(|^)\\d{6}");  // 6 is the length of sms
+        Pattern otpPattern = Pattern.compile("(|^)\\d{6}");  // 6 is the length of sms  and d means just accept digit
         Matcher matcher = otpPattern.matcher(message);
         if(matcher.find()){
             edtOtp.setText(matcher.group(0));
